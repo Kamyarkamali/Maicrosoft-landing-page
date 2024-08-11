@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header -->
+
+    <div>
+      <div class="flex justify-between mt-[1rem] max-w-[1200px] mx-auto">
+        <div id="myHamburgerMenu" class="hamburger-menu">
+          <span class="close-btn" onclick="closeHamburgerMenu()">&times;</span>
+          <!-- محتوای منو -->
+          <p>Menu Item 1</p>
+          <p>Menu Item 2</p>
+          <p>Menu Item 3</p>
+        </div>
+        <!-- icon hamburger menu -->
+        <div class="flex items-center gap-2 md:hidden">
+          <img
+            onclick="openHamburgerMenu()"
+            class="w-[30px] ml-4 cursor-pointer md:hidden"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAYFBMVEX///8iICEkHyEAAAD39/d3dnft7O1tbG2dnJ0TERGqqaqLiooWExMRDhCgnp4YEhWVlZV+fn7AwMAvLi60tLTZ2dk1MzQ9Oz0LBAeFhYUnJSXIx8fNzc2Qj5BBQEBMTEwa0bwlAAAB1klEQVR4nO3c626CQBCGYRZX68JuOXhC8HD/d1lWjGKjVptJJ2neJ03KtIPyhWT/7GSTBAAAAAAAAAAAAAAAAACgxtZzPUsrmqU2E00mE4yzWgejKWxqsSy21M1iTLMXezV2qh1mUs3Ewmz7MGmaKobZioVJujaohnELwQXNZq0visIpCetS7sX0abp8qmdbS2aJcTTJRgEAAAAAAAAAAADw/+zKXE9ZS+5q2mwTt87PvPeja+fv/uNp1wu3jAsvunW+W5yGGgZxyuBhkb5ZvNRl3EZuqMHm4cnz/yLZm5GNmeRyszNTP/6a9Ekx+mXuFeOul9PIDgLt3WWMJT39nK/jY90vRl3mcdejW9Kb+3tNLrcE7DbNzw/zvXit61GYm7GjcBBcz+zy6EMIzrtQxDUmxCoWrr+OhXOu8Kci/j12+aHrVIy7imuX6zv6pWoofOEvn3vtGr7THyTHGpNklX3qyXZMzwAAAAAAAAAAAAB4bqZJdkvTLqsPPdVS9NSJso1b3V7LYi+YpjbOaHKt3CCArdQP0ZE7d8ZO44tRPURHcBBorn0iUFPKLWir9UQ1THPoxLL0aY5N0NMc5E4Ei2yX6RGdNwUAAAAAAAAAAAAAAACAP/YFjr5P5r5bNvUAAAAASUVORK5CYII="
+            alt=""
+          />
+          <img
+            class="w-[17px] cursor-pointer"
+            src="https://cdn-icons-png.flaticon.com/512/764/764587.png"
+            alt=""
+          />
+        </div>
+        <!-- icon hamburger menu -->
+
+        <div
+          class="flex items-center md:justify-start justify-center w-full md:max-w-[800px]"
+        >
+          <img
+            class="w-[107px] h-[23px]"
+            src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31"
+            alt="logo"
+          />
+
+          <div class="md:flex items-center ml-4 gap-3 text-sm hidden">
+            <p
+              class="hover:border-b-2 duration-150 border-black cursor-pointer"
+            >
+              Microsift
+            </p>
+            <p
+              class="hover:border-b-2 duration-150 border-black cursor-pointer"
+            >
+              Teams
+            </p>
+            <p
+              class="hover:border-b-2 duration-150 border-black cursor-pointer"
+            >
+              Copiot
+            </p>
+            <p
+              class="hover:border-b-2 duration-150 border-black cursor-pointer"
+            >
+              Windows
+            </p>
+            <p
+              class="hover:border-b-2 hidden lg:block duration-150 border-black cursor-pointer"
+            >
+              Surface
+            </p>
+
+            <p
+              class="hover:border-b-2 hidden lg:block duration-150 border-black cursor-pointer"
+            >
+              Xbox
+            </p>
+            <p
+              class="hover:border-b-2 hidden lg:block duration-150 border-black cursor-pointer"
+            >
+              Deals
+            </p>
+            <p
+              class="hover:border-b-2 hidden lg:block duration-150 border-black cursor-pointer"
+            >
+              Small Business
+            </p>
+            <p
+              class="hover:border-b-2 hidden lg:block duration-150 border-black cursor-pointer"
+            >
+              Support
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 items-center">
+          <div class="md:flex hidden items-center gap-1">
+            <span class="text-sm md:block hidden">All Microsoft</span>
+            <img
+              class="w-[10px]"
+              src="https://cdn-icons-png.flaticon.com/256/54/54785.png"
+              alt="arrow"
+            />
+          </div>
+          <div class="lg:flex hidden items-center gap-1">
+            <span class="text-sm md:block hidden">Search</span>
+            <img
+              class="w-[14px]"
+              src="https://cdn-icons-png.flaticon.com/512/764/764587.png"
+              alt="arrow"
+            />
+          </div>
+          <div class="lg:flex items-center gap-1 md:hidden">
+            <span class="text-sm md:block hidden">Cart</span>
+            <img
+              class="w-[25px]"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm_Cpr9npZUleBQ8Eu05TWB3EmsCB0Wp88tQ&s"
+              alt="arrow"
+            />
+          </div>
+          <div class="flex items-center gap-1">
+            <span class="text-sm lg:block hidden">Sign In</span>
+            <img
+              class="w-[40px]"
+              src="https://static.vecteezy.com/system/resources/thumbnails/002/318/271/small_2x/user-profile-icon-free-vector.jpg"
+              alt="arrow"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- header -->
+
+    <!-- notif -->
+
+    <div
+      class="bg-[#9BF00B] w-full h-[57px] mt-[1rem] flex justify-center gap-2 items-center font-bold text-gray-700"
+    >
+      <p
+        class="hover:border-b-[2px] text-[15px] text-center duration-200 cursor-pointer transition-all ease-in border-gray-800"
+      >
+        Buy now, enjoy price protection for 60 days from delivery. Shop Back to
+        School Sale now
+      </p>
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/32/32213.png"
+        alt="/"
+        class="w-[13px]"
+      />
+    </div>
+
+    <!-- notif -->
+
+    <!-- slider -->
+
+    <div class="slider-container">
+      <div class="slider-wrapper">
+        <div class="slide relative">
+          <img
+            src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Essentials-Pro-MS365-MSComplete-FY25BTS:VP5-1920x600"
+            alt="Slide 1"
+          />
+          <div
+            class="absolute z-10 top-[4rem] flex flex-col left-[6rem] items-start gap-5"
+          >
+            <button class="bg-[#9BF00B] p-2 font-bold">Back to school</button>
+            <h1 class="w-[435px] text-3xl font-bold">
+              Surface Laptop, Copilot+ PC Bundle
+            </h1>
+            <p class="w-[435px]">
+              Save up to $59 on the most flexible 2-in-1 out there with
+              Microsoft 365, a protection plan, and 20% off select accessories.
+            </p>
+            <button class="bg-[#0067B8] text-white p-2 font-bold">
+              Sop the bundle
+            </button>
+          </div>
+        </div>
+        <div class="slide relative">
+          <img
+            src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Essentials-Laptop-MS365-MSComplete-FY25BTS:VP5-1920x600"
+            alt="Slide 2"
+          />
+          <div
+            class="absolute z-10 top-[4rem] flex flex-col left-[6rem] items-start gap-5"
+          >
+            <button class="bg-[#9BF00B] p-2 font-bold">Back to school</button>
+            <h1 class="w-[435px] text-3xl font-bold">
+              Surface Laptop, Copilot+ PC Bundle
+            </h1>
+            <p class="w-[435px]">
+              Save up to $59 on the most flexible 2-in-1 out there with
+              Microsoft 365, a protection plan, and 20% off select accessories.
+            </p>
+            <button class="bg-[#0067B8] text-white p-2 font-bold">
+              Sop the bundle
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="slider-prev">❮</button>
+        <div class="slider-pagination">
+          <span class="pagination-dot active" data-slide="1"></span>
+          <span class="pagination-dot" data-slide="2"></span>
+        </div>
+        <button class="slider-next">❯</button>
+      </div>
+    </div>
+
+    <!-- slider -->
+
+    <!-- box icon -->
+
+    <div
+      class="max-w-[1275px] mx-auto grid lg:grid-cols-5 grid-cols-1 gap-5 lg:gap-0 mt-[4rem] relative"
+    >
+      <div class="flex flex-col items-center">
+        <img
+          class="w-[40px]"
+          src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Link-List-Icons-Surface-Devices?wid=40&hei=40"
+          alt=""
+        />
+        <a class="text-blue-700 border-b-[1px] border-blue-800" href="#"
+          >Shop Surface devices</a
+        >
+      </div>
+
+      <div class="flex flex-col items-center">
+        <img
+          class="w-[40px]"
+          src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Link-List-Icons-Xbox-Games-Consoles?wid=40&hei=40"
+          alt=""
+        />
+        <a class="text-blue-700 border-b-[1px] border-blue-800" href="#"
+          >Shop Xbox games and consoles</a
+        >
+      </div>
+
+      <div class="flex flex-col items-center">
+        <img
+          class="w-[40px]"
+          src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Link-List-Icon-PC?wid=40&hei=40"
+          alt=""
+        />
+        <a class="text-blue-700 border-b-[1px] border-blue-800" href="#"
+          >Find your next PC</a
+        >
+      </div>
+
+      <div class="flex flex-col items-center">
+        <img
+          class="w-[40px]"
+          src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Link-List-Icons-Business?wid=40&hei=40"
+          alt=""
+        />
+        <a class="text-blue-700 border-b-[1px] border-blue-800" href="#"
+          >Shop for your business</a
+        >
+      </div>
+
+      <div class="flex flex-col items-center">
+        <img
+          class="w-[40px]"
+          src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Link-List-Icons-Microsoft-365?wid=40&hei=40"
+          alt=""
+        />
+        <a class="text-blue-700 border-b-[1px] border-blue-800" href="#"
+          >Choose your Microsoft 365</a
+        >
+      </div>
+
+      <div
+        class="flex flex-col items-center mt-[2rem] absolute top-[4rem] left-[37rem]"
+      >
+        <img
+          class="w-[40px]"
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Book_Icon_40x40?wid=40&hei=40"
+          alt=""
+        />
+        <a class="text-blue-700 border-b-[1px] border-blue-800" href="#"
+          >Back to School deals</a
+        >
+      </div>
+    </div>
+
+    <!-- box icon -->
+
+    <!-- boximageandtitile -->
+
+    <div class="grid grid-cols-4 mt-[8rem] max-w-[1300px] mx-auto">
+      <div
+        class="w-[300px] h-[520px] shadow-lg flex flex-col justify-start items-center"
+      >
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Microsoft-365-Lifestyle-Sandstone-Icon-Toss?wid=380&hei=213&fit=crop"
+          alt=""
+        />
+        <h1 class="text-2xl font-bold w-[252px] ml-4 mt-3">
+          Maximize the everyday with Microsoft 365
+        </h1>
+
+        <p class="w-[252px] text-sm mt-3 leading-6">
+          Get online protection, secure cloud storage, and innovative apps
+          designed to fit your needs—all in one plan. For 1 person
+        </p>
+        <div class="flex flex-col mr-9 gap-3">
+          <button class="bg-[#0067B8] mr-[6rem] mt-[2rem] p-2 text-white">
+            For 1 person
+          </button>
+          <p class="text-blue-800">For up to 6 people</p>
+        </div>
+      </div>
+
+      <div
+        class="w-[300px] h-[520px] shadow-lg flex flex-col justify-start items-center"
+      >
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-XSS-CP-Xbox-Series-S-Evergreen?wid=380&hei=213&fit=crop"
+          alt=""
+        />
+        <h1 class="text-3xl w-[252px] ml-4 mt-3 font-bold">Xbox Series S</h1>
+        <p class="w-[252px] ml-4 mt-[-0px]">
+          Next-gen performance in the smallest Xbox ever.
+        </p>
+        <button class="bg-[#0067B8] ml-4 mr-[6rem] mt-[12rem] p-2 text-white">
+          Shop Xbox Series S
+        </button>
+      </div>
+
+      <div
+        class="w-[300px] h-[520px] shadow-lg flex flex-col justify-start items-center"
+      >
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-XSX-CP-Xbox-Series-X?wid=380&hei=213&fit=crop"
+          alt=""
+        />
+        <h1 class="text-3xl w-[252px] ml-4 mt-3">Xbox Series X</h1>
+        <p class="w-[252px] ml-4 mt-[-0px]">
+          The fastest, most powerful Xbox ever.
+        </p>
+        <button class="bg-[#0067B8] ml-4 mr-[6rem] mt-[12rem] p-2 text-white">
+          Shop Xbox Series X
+        </button>
+      </div>
+
+      <div
+        class="w-[300px] h-[520px] shadow-lg flex flex-col justify-start items-center"
+      >
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Game-Pass-Ultimate?wid=380&hei=213&fit=crop"
+          alt=""
+        />
+        <h1 class="text-3xl w-[252px] ml-4 mt-3">Xbox Game Pass Ultimate</h1>
+        <p class="w-[252px] ml-4 mt-[10px]">
+          Play new games on day one. Plus, enjoy hundreds of high-quality games
+          with friends on console and PC.
+        </p>
+        <button class="bg-[#0067B8] ml-4 mr-[9rem] mt-[7rem] p-2 text-white">
+          Join now
+        </button>
+      </div>
+    </div>
+
+    <!-- boximageandtitile -->
+
+    <!-- images news -->
+
+    <div class="max-w-[1275px] mx-auto">
+      <img
+        src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-MultiCanvas-Microsoft-Copilot-App-3screens:VP5-1596x600"
+        alt=""
+      />
+    </div>
+
+    <!-- images news -->
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
