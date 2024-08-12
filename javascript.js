@@ -46,3 +46,43 @@ document.querySelectorAll(".pagination-dot").forEach((dot, i) => {
 
 // Initialize the slider
 showSlide(currentSlide);
+
+let currentSlide2 = 0;
+const slides2 = document.querySelectorAll(".slide2");
+const totalSlides2 = slides2.length;
+
+function showSlide2(index2) {
+  if (index2 >= totalSlides2) {
+    currentSlide2 = 0;
+  } else if (index2 < 0) {
+    currentSlide2 = totalSlides2 - 1;
+  } else {
+    currentSlide2 = index2;
+  }
+
+  document.querySelector(".slider-wrapper2").style.transform = `translateX(-${
+    currentSlide2 * 100
+  }%)`;
+
+  // Update pagination dots
+  document.querySelectorAll(".pagination-dot2").forEach((dot, i) => {
+    dot.classList.toggle("active2", i === currentSlide2);
+  });
+}
+
+document.querySelector(".slider2-next2").addEventListener("click", () => {
+  showSlide2(currentSlide2 + 1);
+});
+
+document.querySelector(".slider2-prev2").addEventListener("click", () => {
+  showSlide2(currentSlide2 - 1);
+});
+
+document.querySelectorAll(".pagination-dot2").forEach((dot, i) => {
+  dot.addEventListener("click", () => {
+    showSlide2(i);
+  });
+});
+
+// Initialize the slider
+showSlide2(currentSlide2);

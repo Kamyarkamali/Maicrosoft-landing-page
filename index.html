@@ -16,10 +16,40 @@
         <div id="myHamburgerMenu" class="hamburger-menu">
           <span class="close-btn" onclick="closeHamburgerMenu()">&times;</span>
           <!-- محتوای منو -->
-          <p>Menu Item 1</p>
-          <p>Menu Item 2</p>
-          <p>Menu Item 3</p>
+          <div class="mt-12">
+            <p class="border-b-[1px] border-dashed border-black p-2">
+              Microsoft 365
+            </p>
+            <p class="border-b-[1px] border-dashed border-black p-2">Teams</p>
+            <p class="border-b-[1px] border-dashed border-black p-2">Copiot</p>
+            <p class="border-b-[1px] border-dashed border-black p-2">Windows</p>
+            <p class="border-b-[1px] border-dashed border-black p-2">Surface</p>
+            <p class="border-b-[1px] border-dashed border-black p-2">Xbox</p>
+            <p class="border-b-[1px] border-dashed border-black p-2">Deals</p>
+            <p class="border-b-[1px] border-dashed border-black p-2">
+              Small Business
+            </p>
+            <p class="border-b-[1px] border-dashed border-black p-2">Support</p>
+            <p class="border-b-[1px] border-dashed border-black p-2">Sofware</p>
+            <p class="border-b-[1px] border-dashed border-black p-2">
+              PC & Devices
+            </p>
+            <p class="border-b-[1px] border-dashed border-black p-2">
+              Entertanment
+            </p>
+            <p class="border-b-[1px] border-dashed border-black p-2">
+              Business
+            </p>
+            <p class="border-b-[1px] border-dashed border-black p-2">
+              Developer & IT
+            </p>
+            <p class="border-b-[1px] border-dashed border-black p-2">Other</p>
+            <p class="border-b-[1px] border-dashed border-black p-2">
+              View Sitemap
+            </p>
+          </div>
         </div>
+
         <!-- icon hamburger menu -->
         <div class="flex items-center gap-2 md:hidden">
           <img
@@ -164,7 +194,7 @@
             alt="Slide 1"
           />
           <div
-            class="absolute z-10 top-[4rem] flex flex-col left-[6rem] items-start gap-5"
+            class="absolute z-10 top-[4rem] lg:flex flex-col hidden left-[6rem] items-start gap-5"
           >
             <button class="bg-[#9BF00B] p-2 font-bold">Back to school</button>
             <h1 class="w-[435px] text-3xl font-bold">
@@ -210,6 +240,22 @@
         <button class="slider-next">❯</button>
       </div>
     </div>
+
+    <!-- section slider mobilie -->
+    <div class="flex flex-col items-start gap-5 mt-8 ml-5 lg:hidden">
+      <button class="bg-[#9BF00B] p-1 font-bold">Back to school</button>
+      <h1 class="w-[435px] text-3xl font-bold">
+        Surface Laptop, Copilot+ PC Bundle
+      </h1>
+      <p class="w-[435px]">
+        Save up to $59 on the most flexible 2-in-1 out there with Microsoft 365,
+        a protection plan, and 20% off select accessories.
+      </p>
+      <button class="bg-[#0067B8] text-white p-2 font-bold">
+        Sop the bundle
+      </button>
+    </div>
+    <!-- section slider mobilie -->
 
     <!-- slider -->
 
@@ -376,12 +422,12 @@
 
     <div class="max-w-[1297px] mt-[6rem] mx-auto relative">
       <img
-        class="w-[1275px]"
+        class="w-[1275px] object-cover"
         src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-MultiCanvas-Microsoft-Copilot-App-3screens:VP5-1596x600"
         alt=""
       />
       <div
-        class="absolute top-[5rem] flex flex-col items-center left-[7rem] gap-6"
+        class="absolute top-[5rem] lg:flex hidden flex-col items-center left-[7rem] gap-6"
       >
         <h1 class="w-[286px] text-[37px] font-bold">
           Unlock your potential with Microsoft Copilot
@@ -397,6 +443,22 @@
     </div>
 
     <!-- images news -->
+
+    <!-- images nees mobile -->
+    <div class="flex lg:hidden flex-col items-start ml-4 gap-3">
+      <h1 class="w-[286px] text-[30px] font-bold">
+        Unlock your potential with Microsoft Copilot
+      </h1>
+      <span class="w-[286px] text-[16px]"
+        >Get things done faster and unleash your creativity with the power of AI
+        anywhere you go</span
+      >
+      <button class="bg-[#0067B8] p-2 text-white font-bold flex">
+        Download Copilot app
+      </button>
+    </div>
+
+    <!-- images news mobile -->
 
     <!-- box2 -->
 
@@ -545,12 +607,10 @@
           class="lg:w-[409px] w-[402px] h-[520px] shadow-lg flex flex-col justify-start items-center"
         >
           <img
-            src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Surface-For-Business-Pro-10-Laptop-6?wid=380&hei=213&fit=crop"
+            src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-AI-Email-Overload?wid=517&hei=291&fit=crop"
             alt=""
           />
-          <div class="flex justify-start w-full ml-10 mt-7">
-            <button class="bg-[#FFB900] p-1 w-[60px]">New</button>
-          </div>
+
           <h1 class="text-3xl w-[361px] ml-4 mt-3 font-bold">
             Tame your inbox with AI
           </h1>
@@ -570,12 +630,10 @@
           class="lg:w-[409ox] w-[402px] h-[520px] shadow-lg flex flex-col justify-start items-center"
         >
           <img
-            src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Copilot-Microsoft-365-Commercial?wid=380&hei=213&fit=crop"
+            src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-AI-Quiz-2-Magenta?wid=517&hei=291&fit=crop"
             alt=""
           />
-          <div class="flex justify-start w-full ml-10 mt-7">
-            <button class="bg-[#FFB900] p-1 w-[60px]">New</button>
-          </div>
+
           <h1 class="text-3xl w-[361px] ml-4 mt-3 font-bold">
             What’s your AIQ at work?
           </h1>
@@ -591,6 +649,195 @@
       </div>
     </div>
     <!-- box3 -->
+
+    <!-- slider2 -->
+
+    <div class="slider-container2 max-w-[1300px] mx-auto">
+      <div class="slider-wrapper2">
+        <div class="slide2 relative">
+          <div class="hidden lg:block">
+            <img
+              src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Copilot-Creator-Images:VP5-1596x600"
+              alt="Slide 1"
+            />
+          </div>
+          <div class="lg:hidden">
+            <img
+              src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Copilot-Creator-Images:VP2-859x540"
+              alt=""
+            />
+          </div>
+          <div
+            class="absolute z-10 top-[4rem] lg:flex hidden flex-col right-0 items-start gap-5"
+          >
+            <h1 class="w-[435px] text-3xl font-bold">And in walked trouble…</h1>
+            <p class="w-[435px]">
+              Using their vivid imaginations and Copilot, creators from around
+              the world constructed unique story plots and AI-generated imagery
+              inspired by an iconic movie line.
+            </p>
+            <button class="bg-[#0067B8] text-white p-2 font-bold">
+              Explore their stories and create yours
+            </button>
+          </div>
+        </div>
+        <div class="slide2 relative">
+          <img
+            src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Sustainability-AI-Bioacoustics-Scarlet-Macaw:VP5-1596x600"
+            alt="Slide 2"
+          />
+          <div
+            class="absolute z-10 top-[4rem] lg:flex hidden flex-col left-[6rem] items-start gap-5"
+          >
+            <button class="bg-[#9BF00B] p-2 font-bold">Back to school</button>
+            <h1 class="w-[435px] text-3xl font-bold">
+              Surface Laptop, Copilot+ PC Bundle
+            </h1>
+            <p class="w-[435px]">
+              Save up to $59 on the most flexible 2-in-1 out there with
+              Microsoft 365, a protection plan, and 20% off select accessories.
+            </p>
+            <div>
+              <button class="bg-[#0067B8] text-white p-2 font-bold">
+                Explore their stories and create yours
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-controls2">
+        <button class="slider2-prev2">❮</button>
+        <div class="slider-pagination2">
+          <span class="pagination-dot2 active2" data-slide="1"></span>
+          <span class="pagination-dot2" data-slide="2"></span>
+        </div>
+        <button class="slider2-next2">❯</button>
+      </div>
+    </div>
+
+    <!-- slider2 -->
+
+    <!-- section slider mobilie -->
+    <div class="flex flex-col items-start gap-5 mt-8 ml-5 lg:hidden">
+      <h1 class="w-[435px] text-3xl font-bold">And in walked trouble…</h1>
+      <p class="w-[435px]">
+        Using their vivid imaginations and Copilot, creators from around the
+        world constructed unique story plots and AI-generated imagery inspired
+        by an iconic movie line.
+      </p>
+      <button class="bg-[#0067B8] text-white p-2 font-bold">
+        Eplore their stories and create yours
+      </button>
+    </div>
+    <!-- section slider mobilie -->
+
+    <!-- sochial media -->
+
+    <div class="max-w-[1300px] mx-auto flex items-center justify-between">
+      <div class="flex items-center mt-[3rem]">
+        <p>Follow Micrsoft</p>
+        <img
+          class="w-[30px]"
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Facebook%202x?scl=1"
+          alt=""
+        />
+        <img
+          class="w-[30px]"
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/icon-MSCOM-X-64x64?scl=1"
+          alt=""
+        />
+        <img
+          class="w-[30px]"
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Linkedin%202x?scl=1"
+          alt=""
+        />
+      </div>
+      <button class="bg-[#D9D9D9] p-2 w-[120px] cursor-pointer">
+        Back To Up
+      </button>
+    </div>
+
+    <!-- sochial media -->
+
+    <!-- footer -->
+
+    <div
+      class="mt-7 max-w-[1409px] mx-auto bg-[#F2F2F2] flex flex-col lg:flex-row lg:justify-around"
+    >
+      <div class="text-[12px] leading-8 ml-4 mt-4">
+        <span class="text-gray-600 font-bold text-[14px]">Wthas new</span>
+        <p>Surface Pro</p>
+        <p>Surface Laptop</p>
+        <p>Surface Laptop Studio 2</p>
+        <p>Surface Laptop Go 3</p>
+        <p>Microsoft Copilot</p>
+        <p>AI in Windows</p>
+        <p>Explore Microsoft products</p>
+        <p>Windows 11 apps</p>
+      </div>
+
+      <div class="text-[12px] leading-8 ml-4 mt-4">
+        <span class="text-gray-600 font-bold text-[14px]">Microsoft Store</span>
+        <p>Account profile</p>
+        <p>Download Center</p>
+        <p>SMicrosoft Store support</p>
+        <p>Returns</p>
+        <p>Order tracking</p>
+        <p>Certified Refurbished</p>
+        <p>Microsoft Store Promise</p>
+        <p>Flexible Payments</p>
+      </div>
+
+      <div class="text-[12px] leading-8 ml-4 mt-4">
+        <span class="text-gray-600 font-bold text-[14px]">Education</span>
+        <p>Microsoft in education</p>
+        <p>Devices for education</p>
+        <p>Microsoft Teams for Education</p>
+        <p>Microsoft 365 Education</p>
+        <p>How to buy for your school</p>
+        <p>Educator training and development</p>
+        <p>Deals for students and parents</p>
+        <p>Azure for students</p>
+      </div>
+
+      <div class="text-[12px] leading-8 ml-4 mt-4">
+        <span class="text-gray-600 font-bold text-[14px]">Business</span>
+        <p>Microsoft Cloud</p>
+        <p>Microsoft Security</p>
+        <p>Dynamics 365</p>
+        <p>Microsoft 365</p>
+        <p>Microsoft Power Platform</p>
+        <p>Microsoft Teams</p>
+        <p>Copilot for Microsoft 365</p>
+        <p>Small Business</p>
+      </div>
+
+      <div class="text-[12px] leading-8 ml-4 mt-4">
+        <span class="text-gray-600 font-bold text-[14px]">Developer & IT</span>
+        <p>Azure</p>
+        <p>Developer Center</p>
+        <p>Documentation</p>
+        <p>Microsoft Learn</p>
+        <p>Microsoft Tech Community</p>
+        <p>Azure Marketplace</p>
+        <p>AppSource</p>
+        <p>Visual Studio</p>
+      </div>
+
+      <div class="text-[12px] leading-8 ml-4 mt-4">
+        <span class="text-gray-600 font-bold text-[14px]">Company</span>
+        <p>Careers</p>
+        <p>About Microsoft</p>
+        <p>Company news</p>
+        <p>Privacy at Microsoft</p>
+        <p>Investorsy</p>
+        <p>Diversity and inclusion</p>
+        <p>Accessibility</p>
+        <p>Sustainability</p>
+      </div>
+    </div>
+
+    <!-- footer -->
 
     <script src="javascript.js"></script>
   </body>
